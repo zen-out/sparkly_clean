@@ -1,0 +1,27 @@
+{
+    "path": "./tree",
+    "name": "tree",
+    "children": [{
+            "path": "tree/backend",
+            "name": "backend",
+            "children": []
+        },
+        {
+            "path": "tree/frontend",
+            "name": "frontend",
+            "children": [{
+                "path": "tree/frontend/views",
+                "name": "views",
+                "children": []
+            }]
+        },
+        {
+            "path": "tree/structure",
+            "name": "structure",
+            "children": [{
+                "path": "tree/structure/index.json",
+                "name": "index.json"
+            }]
+        }
+    ]
+}

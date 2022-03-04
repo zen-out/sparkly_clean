@@ -1,0 +1,10 @@
+{"level":"problem","message":"i have the tree, but i guess i'm not quite sure which files i use the most","timestamp":"2022-03-04T04:21:40.125Z"}
+{"level":"should","message":"you should have a place for everything","timestamp":"2022-03-04T04:21:40.126Z"}
+{"level":"is","message":"it's better to build in modules","timestamp":"2022-03-04T04:21:40.127Z"}
+{"level":"problem","message":"i have the tree, but i guess i'm not quite sure which files i use the most","timestamp":"2022-03-04T04:27:07.301Z"}
+{"level":"should","message":"you should have a place for everything","timestamp":"2022-03-04T04:27:07.303Z"}
+{"level":"is","message":"it's better to build in modules","timestamp":"2022-03-04T04:27:07.303Z"}
+{"level":"problem","message":"i have the tree, but i guess i'm not quite sure which files i use the most","timestamp":"2022-03-04T04:36:55.299Z"}
+{"level":"should","message":"you should have a place for everything","timestamp":"2022-03-04T04:36:55.300Z"}
+{"level":"is","message":"it's better to build in modules","timestamp":"2022-03-04T04:36:55.301Z"}
+{"level":"step","message":"be able to print out directory structure and get it as an object, put it in a db.json file","timestamp":"2022-03-04T04:36:55.302Z"}
