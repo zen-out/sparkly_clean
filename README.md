@@ -1,5 +1,7 @@
 // if this is a tool, it would be the chinese ladle
 
+![sparkly_clean](https://dl.dropbox.com/s/q6sadm6mxt97kby/sparkly_clean.jpeg)
+
 # read and write 
 - problem: it's hard to keep organized 
 - what should be: we should always know where things are 

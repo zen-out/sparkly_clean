@@ -4,6 +4,7 @@
     "description": "read, copy, write files - most useful methods",
     "main": "index.js",
     "scripts": {
+        "deploy": "git add . && git commit -m 'added' && git push && npm version patch && npm publish",
         "test": "npm run test"
     },
     "keywords": [
