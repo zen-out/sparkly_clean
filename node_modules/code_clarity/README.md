@@ -2,7 +2,7 @@
 
 ## How do we make code straightfoward?
 
-### Break things down, this is a bit like... writing cantonese letters. the more you do it, the better you get. 
+### Break things down, this is a bit like... writing. the more you do it, the better you get. 
 
 ### slow down. it takes a while. practice the right things. draw out the outline of the code. study the architecture and the organization. 
 
@@ -27,5 +27,9 @@ const {  see, hourglass } = require("code_clarity")
     // see.is("hi")
     // see.how("how")
     // see.step("step")
+<<<<<<< HEAD
     // see.motherlode("motherlode")
 ```
+=======
+```
+>>>>>>> f28fa343f509515e87d1c5054aea6b2fad2dd9f6

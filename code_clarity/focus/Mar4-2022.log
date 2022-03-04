@@ -8,3 +8,23 @@
 {"level":"should","message":"you should have a place for everything","timestamp":"2022-03-04T04:36:55.300Z"}
 {"level":"is","message":"it's better to build in modules","timestamp":"2022-03-04T04:36:55.301Z"}
 {"level":"step","message":"be able to print out directory structure and get it as an object, put it in a db.json file","timestamp":"2022-03-04T04:36:55.302Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:08:07.819Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:21:50.890Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:21:56.116Z"}
+{"level":"should","message":"it should run","timestamp":"2022-03-04T06:21:56.121Z"}
+{"level":"is","message":"throwing errors","timestamp":"2022-03-04T06:21:56.122Z"}
+{"level":"step","message":"","timestamp":"2022-03-04T06:21:56.122Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:44:21.502Z"}
+{"level":"should","message":"it should run","timestamp":"2022-03-04T06:44:21.508Z"}
+{"level":"is","message":"throwing errors","timestamp":"2022-03-04T06:44:21.509Z"}
+{"level":"step","message":"","timestamp":"2022-03-04T06:44:21.509Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:45:19.023Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:45:43.326Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:46:04.954Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:46:12.043Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:46:31.682Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:48:43.856Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:48:49.553Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:48:59.410Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:49:06.010Z"}
+{"level":"problem","message":"whats wrong, its not executing","timestamp":"2022-03-04T06:50:39.270Z"}

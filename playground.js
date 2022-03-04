@@ -10,74 +10,74 @@
  * 
  * 
  ***********************************************/
-const { getDirectoryStructure, readJSON, writeJSON } = require("./index.js")
+const ccc = require("./index.js")
 
-const path = require("path")
-const dirTree = require("directory-tree")
 const { see, hourglass } = require("code_clarity")
-const fs = require("fs-extra")
+ccc.writeJSON("./tree.json", { hello: "hwatsup" })
 
-let getDirectory = getDirectoryStructure("./tree")
-let structuredPath = "./tree/structure/index.json"
-writeJSON("./tree/structure/index.json", getDirectory)
-let readFromFile = readJSON(structuredPath)
-console.log("🚀 ~ file: playground.js ~ line 23 ~ readFromFile", JSON.stringify(readFromFile))
+// /**
+//  * @Description 
+//  * 1. Grabs JSON from json file 
+//  * 2. Grabs the key {data: [{}], problems: [{}]}
+//  * @author zen-out
+//  * @date 2022-03-04
+//  * @param {any} "1:30PM"
+//  * @returns {any}
+//  */
+// function appendToJSON(filePath, key, object) {
+//     hourglass.start("1:30 PM")
+//     let readFromFile = readJSON(filePath)
+//         // this would be an array 
+//     let getKey = readFromFile[key]
+//     getKey = getKey.push(object)
+//     readFromFile[key] = getKey;
+//     writeJSON(filePath, readFromFile)
+//     hourglass.end("1:53")
+// }
 
-/**
- * @Description 
- * 1. Grabs JSON from json file 
- * 2. Grabs the key {data: [{}], problems: [{}]}
- * @author zen-out
- * @date 2022-03-04
- * @param {any} "1:30PM"
- * @returns {any}
- */
-function appendToJSON(filePath, key, object) {
-    hourglass.start("1:30 PM")
-    let readFromFile = readJSON(filePath)
-        // this would be an array 
-    let getKey = readFromFile[key]
-    getKey = getKey.push(object)
-    readFromFile[key] = getKey;
-    writeJSON(filePath, readFromFile)
-}
+// // appendToJSON("")
+
+// // function getFromJSON(filePath, key, object) {
+// //     hourglass.start("get one from json")
+// //         // let
+// // }
 
 
-appendToJSON(structuredPath, "problem", { problem: "i dont want to answer the phone" })
-    /**
-     * @Description 
-     * 1. Given file path and destination, grabs the current readme file 
-     * 2. Parses it into html 
-     * 3. Outputs it into destination file, as an html document. 
-     * @author zen-out
-     * @date 2022-03-04
-     * @param {any} filePath
-     * @param {any} destination
-     * @returns {any}
-     */
-function moveReadMeIntoGithub(filePath, destination) {
-    // grabs the current readme file
-    // applies remarkable to it 
-    // pastes it into 
-}
-/**
- * @Description 
- * @author zen-out
- * @date 2022-03-04
- * @param {string} folder
- * @param {any} time
- * @returns {any}
- */
-function notTouchedForThisTime(folder, time) {
+// // appendToJSON(structuredPath, "problem", { problem: "i dont want to answer the phone" })
+// /**
+//  * @Description 
+//  * 1. Given file path and destination, grabs the current readme file 
+//  * 2. Parses it into html 
+//  * 3. Outputs it into destination file, as an html document. 
+//  * @author zen-out
+//  * @date 2022-03-04
+//  * @param {any} filePath
+//  * @param {any} destination
+//  * @returns {any}
+//  */
+// function moveReadMeIntoGithub(filePath, destination) {
+//     // grabs the current readme file
+//     // applies remarkable to it 
+//     // pastes it into 
+// }
+// /**
+//  * @Description 
+//  * @author zen-out
+//  * @date 2022-03-04
+//  * @param {string} folder
+//  * @param {any} time
+//  * @returns {any}
+//  */
+// function notTouchedForThisTime(folder, time) {
 
-    let teim2 = time;
-    let whatsup = time + time;
-}
+//     let teim2 = time;
+//     let whatsup = time + time;
+// }
 
-function refreshNodeModules() {
+// function refreshNodeModules() {
 
-}
+// }
 
-function identifyJoy(addIntoJSON) {
+// function identifyJoy(addIntoJSON) {
 
-}
+// }

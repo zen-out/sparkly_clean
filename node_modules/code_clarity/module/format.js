@@ -11,45 +11,34 @@ const myFormat = winston.format.printf(({ level, message, timestamp, ...metadata
     let teal = colors.cyan.bold;
     let blue = colors.brightBlue.bold;
     let yellow = colors.yellow;
-    let rainbow = colors.rainbow.bold
+    let rainbow = colors.rainbow
     let gray = colors.bold.gray
     let bgBlack = colors.cyan.bgBlack
     let impMessage = colors.white
     if (timestamp) {
         readableTime = formatDateTime.format(timestamp, "LTS")
-        timestamp = yellow(timestamp);
-        readableTime = yellow(readableTime)
+        timestamp = gray(timestamp);
+        readableTime = gray(readableTime)
     }
     if (level) {
-        if (level === "problem") {
+        if (level === "problem" || level === "is") {
             level = colors.red(level)
             message = red(message)
-        } else if (level === "should") {
+        } else if (level === "should" || level === "how") {
             level = colors.white(level)
             message = white(message)
-        } else if (level === "is") {
-            level = colors.magenta(level)
-            message = pink(message)
-        } else if (level === 'step') {
+        } else if (level === "step") {
+            level = yellow(level)
+            message = yellow(message)
+        } else if (level === "motherlode") {
             level = colors.green(level)
             message = green(message)
-        } else if (level === "motherlode") {
-            level = colors.gray(level)
-            message = gray(message)
-        } else if (level === "how") {
-            level = colors.cyan(level)
-            message = teal(message)
-        } else if (level === "start") {
-            readableTime = teal(readableTime)
-            level = colors.cyan(level)
-            message = pink(message)
-        } else if (level === "end") {
-            readableTime = teal(readableTime)
-            level = colors.cyan(level)
+        } else if (level === "start" || level === "end") {
+            level = pink(level)
             message = pink(message)
         } else {
-            level = colors.blue(level)
-            message = pink(message)
+            level = colors.grey(level)
+            message = colors.green(message)
         }
     }
 

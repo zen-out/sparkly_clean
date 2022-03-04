@@ -1,5 +1,5 @@
 {
-    "name": "sparkly_clean",
+    "name": "clear_concise_creative",
     "version": "1.0.1",
     "description": "read, copy, write files - most useful methods",
     "main": "index.js",
@@ -16,7 +16,7 @@
     "author": "lezzles11",
     "license": "MIT",
     "dependencies": {
-        "code_clarity": "^1.0.17",
+        "code_clarity": "^1.0.20",
         "create-folder-structure": "^3.0.5",
         "directory-tree": "^3.2.2",
         "fs-extra": "^10.0.1",
