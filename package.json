@@ -23,7 +23,7 @@
     "license": "MIT",
     "dependencies": {
         "array_helperz": "^1.0.13",
-        "clear_concise_creative": "^1.0.2",
+        "clear_concise_creative": "^1.0.4",
         "code_clarity": "^1.0.21",
         "define_me": "1.0.1",
         "directory-tree": "^3.2.2",

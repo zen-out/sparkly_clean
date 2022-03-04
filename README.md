@@ -28,10 +28,12 @@ const findRemoveSync = require('find-remove')
 const { see, hourglass } = require("code_clarity")
 
 
+// deletes 
 
-sparkly_clean.deleteFolders({ days: 14, onlyGit: true })
-sparkly_clean.moveAllFrom({ from: "", to: "", name: "" })
 sparkly_clean.getShape("../sparkly_clean")
+sparkly_clean.deleteFolders(onlyGit, 14)
+
+sparkly_clean.moveAllFrom({ from: "", to: "", name: "" })
 sparkly_clean.moveReadMe("./README.md", "")
 
 function deleteFolders(days, boolean) {

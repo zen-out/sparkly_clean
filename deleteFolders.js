@@ -25,15 +25,44 @@ function getFolders() {
     let getFiles = arr["folder"]
     return getFiles
 }
-let files = getFiles()
-let folders = getFolders()
-    // console.log("🚀 ~ file: deleteFolders.js ~ line 29 ~ folders", folders)
-    // console.log("🚀 ~ file: deleteFolders.js ~ line 19 ~ files", files)
+/**
+ * @Description 
+ * 1. Checks whether or not git is needed 
+ * 2. 
+ * @author zen-out
+ * @date 2022-03-04
+ * @param {any} git
+ * @param {any} days
+ * @returns {any}
+ */
+function foldersToDelete(git, days) {
+    if (git === true) {
+        let onlyGit = filterForGitTrue()
+        let deleteThis = filterForPastDate(onlyGit, days)
+        return deleteThis;
+    } else {
+        let folders = getFolders()
+        let deleteThis = filterForPastDate(folders, days)
+        return deleteThis;
+    }
+}
 
-function deleteFiles(days, onlyGit) {
 
+function deleteFolders(git, days) {
+    let folders = foldersToDelete(git, days)
+    console.log(folders)
+    for (let i = 0; i < folders.length; i++) {
+        ccc.deletePath(folders[i]["name"])
+        console.log("deleted")
+    }
 
 }
+
+// console.log("🚀 ~ file: deleteFolders.js ~ line 59 ~ getDelete", getDelete)
+// let doesntMatter = deleteFiles(false, 14)
+// console.log("🚀 ~ file: deleteFolders.js ~ line 56 ~ doesntMatter", doesntMatter)
+// see.should("doesnt matter if its git or not")
+// console.log("🚀 ~ file: deleteFolders.js ~ line 43 ~ theseFiles", theseFiles)
 
 /**
  * @Description 
@@ -48,20 +77,18 @@ function filterForGitTrue() {
 }
 
 function filterForPastDate(array, days) {
-    let newArr = array.map(changeDateObject)
-    return newArr;
+    let arr = []
+    for (let i = 0; i < array.length; i++) {
+        let last_opened = array[i]["last_opened_date"]
+        let deleteIfTrue = dateIsLonger(last_opened, days)
+        if (deleteIfTrue) {
+            array[i]["should_delete"] = deleteIfTrue
+            arr.push(array[i])
+        }
+    }
+    return arr;
 }
 
-function changeDateObject(x) {
-    let last_opened = x["last_opened_date"]
-    let deleteIfTrue = dateIsLonger(last_opened, 14)
-    x["should_delete"] = deleteIfTrue
-    return x;
-}
-let onlyGit = filterForGitTrue()
-console.log("🚀 ~ file: deleteFolders.js ~ line 44 ~ onlyGit", onlyGit)
-let deleteThis = filterForPastDate(onlyGit, 14)
-console.log("🚀 ~ file: deleteFolders.js ~ line 61 ~ deleteThis", deleteThis)
 
 /**
  * @Description 
@@ -85,9 +112,5 @@ function dateIsLonger(date, limit) {
 
 
 
-async function writePath() {
-    let getBody = await getPathForEach().then((result) => {
-        return result;
-    })
-    ccc.writeJSON("./structure/info.json", getBody)
-}
+
+module.exports = { dateIsLonger, filterForPastDate, getFolders, foldersToDelete, deleteFolders, filterForGitTrue, filterForPastDate }
