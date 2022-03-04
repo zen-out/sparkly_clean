@@ -1,25 +1,33 @@
 {
-    "name": "clear_concise_creative",
-    "version": "1.0.1",
-    "description": "read, copy, write files - most useful methods",
+    "name": "sparkly_clean",
+    "version": "1.0.0",
+    "description": "spark joy in your folder organization processes - deletes folders that are longer than two weeks old, moves all folders with a specific name, prints out directory structure and encourages you to think about only things that make you a happy coder, deletes folders that are git repositories, moves readme into your portfolio",
     "main": "index.js",
     "scripts": {
-        "deploy": "git add . && git commit -m 'added' && git push && npm version patch && npm publish",
         "test": "npm run test"
     },
     "keywords": [
+        "clean",
+        "fs-extra",
         "read",
         "write",
-        "fs",
-        "fsextra"
+        "folders",
+        "organize",
+        "spark",
+        "joy",
+        "chill",
+        "zen-out"
     ],
-    "author": "lezzles11",
+    "author": "zen-out",
     "license": "MIT",
     "dependencies": {
-        "code_clarity": "^1.0.20",
-        "create-folder-structure": "^3.0.5",
+        "clear_concise_creative": "^1.0.2",
+        "code_clarity": "^1.0.21",
+        "define_me": "1.0.1",
         "directory-tree": "^3.2.2",
+        "find-remove": "^4.0.4",
+        "format_date_time_moment": "^1.14.6",
         "fs-extra": "^10.0.1",
-        "jsonfile": "^6.1.0"
+        "make_legit": "^1.0.3"
     }
 }

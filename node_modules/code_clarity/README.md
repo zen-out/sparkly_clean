@@ -27,9 +27,5 @@ const {  see, hourglass } = require("code_clarity")
     // see.is("hi")
     // see.how("how")
     // see.step("step")
-<<<<<<< HEAD
     // see.motherlode("motherlode")
 ```
-=======
-```
->>>>>>> f28fa343f509515e87d1c5054aea6b2fad2dd9f6

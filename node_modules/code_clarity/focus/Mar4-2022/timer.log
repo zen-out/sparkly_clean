@@ -20,3 +20,5 @@
 {"level":"end","message":"end","timestamp":"2022-03-04T06:42:58.670Z"}
 {"level":"start","message":"hello","timestamp":"2022-03-04T06:43:05.400Z"}
 {"level":"end","message":"end","timestamp":"2022-03-04T06:43:05.400Z"}
+{"level":"start","message":"hello","timestamp":"2022-03-04T08:27:37.972Z"}
+{"level":"end","message":"end","timestamp":"2022-03-04T08:27:37.972Z"}

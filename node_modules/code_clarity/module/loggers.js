@@ -40,14 +40,26 @@ const see = winston.createLogger({
         new winston.transports.File({
             filename: `focus/${getDate}/focus.log`,
             format: winston.format.json(),
-            handleExceptions: true,
-            handleRejections: true
+
         }),
         new winston.transports.File({
             level: 'motherlode',
             filename: `focus/${getDate}/done.log`,
             format: winston.format.json()
         }),
+    ],
+    handleExceptions: [
+        new winston.transports.File({
+            filename: `focus/${getDate}/errors.log`,
+            format: winston.format.json()
+        }),
+    ],
+    handleRejections: [
+        new winston.transports.File({
+            filename: `focus/${getDate}/errors.log`,
+            format: winston.format.json()
+        }),
+
     ],
     level: 'how',
 })
