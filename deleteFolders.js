@@ -5,6 +5,7 @@ const { see, hourglass } = require("code_clarity")
 const dirTree = require("directory-tree")
 const { git, node_modules } = require("define_me")
 const ccc = require("clear_concise_creative")
+const { arrz } = require("array_helperz")
 
 see.problem("should essentially remove files that you havent touched in two weeks")
 see.should("")
@@ -15,12 +16,52 @@ function getFiles() {
     let arr = ccc.readJSON("./structure/index.json")
         // console.log("🚀 ~ file: deleteFolders.js ~ line 16 ~ getFiles ~ arr", arr)
     let getFiles = arr["files"]
-    console.log("🚀 ~ file: deleteFolders.js ~ line 18 ~ getFiles ~ getFiles", getFiles)
+    return getFiles
+}
 
+function getFolders() {
+    let arr = ccc.readJSON("./structure/index.json")
+        // console.log("🚀 ~ file: deleteFolders.js ~ line 16 ~ getFiles ~ arr", arr)
+    let getFiles = arr["folder"]
+    return getFiles
 }
 let files = getFiles()
+let folders = getFolders()
+    // console.log("🚀 ~ file: deleteFolders.js ~ line 29 ~ folders", folders)
     // console.log("🚀 ~ file: deleteFolders.js ~ line 19 ~ files", files)
 
+function deleteFiles(days, onlyGit) {
+
+
+}
+
+/**
+ * @Description 
+ * @author zen-out
+ * @date 2022-03-04
+ * @returns {any}
+ */
+function filterForGitTrue() {
+    let folders = getFolders()
+    let gitTrue = arrz.contains(folders, "git", true)
+    return gitTrue
+}
+
+function filterForPastDate(array, days) {
+    let newArr = array.map(changeDateObject)
+    return newArr;
+}
+
+function changeDateObject(x) {
+    let last_opened = x["last_opened_date"]
+    let deleteIfTrue = dateIsLonger(last_opened, 14)
+    x["should_delete"] = deleteIfTrue
+    return x;
+}
+let onlyGit = filterForGitTrue()
+console.log("🚀 ~ file: deleteFolders.js ~ line 44 ~ onlyGit", onlyGit)
+let deleteThis = filterForPastDate(onlyGit, 14)
+console.log("🚀 ~ file: deleteFolders.js ~ line 61 ~ deleteThis", deleteThis)
 
 /**
  * @Description 

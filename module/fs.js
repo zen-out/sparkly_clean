@@ -25,7 +25,7 @@ const ccc = require("clear_concise_creative")
 function getDirectoryStructure(filepath, extension = {}) {
     let arr = []
     if (extension !== {}) {
-        const tree = dirTree(filepath, { extension: extension, exclude: node_modules, git }, (item, PATH, stats) => {
+        const tree = dirTree(filepath, { extension: extension, exclude: node_modules }, (item, PATH, stats) => {
             let check = new RegExp(git)
             if (!check.test(PATH)) {
                 let getStats = formatStats(PATH, stats)
@@ -35,7 +35,7 @@ function getDirectoryStructure(filepath, extension = {}) {
         return { tree: tree, files: arr };
     } else {
 
-        const tree = dirTree(filepath, { exclude: node_modules, git }, (item, PATH, stats) => {
+        const tree = dirTree(filepath, { exclude: node_modules }, (item, PATH, stats) => {
             let check = new RegExp(git)
             if (!check.test(PATH)) {
                 let getStats = formatStats(PATH, stats)
