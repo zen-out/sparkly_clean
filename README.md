@@ -1,53 +1,185 @@
 # sparkly_clean
 
-![sparkly_clean](https://dl.dropbox.com/s/q6sadm6mxt97kby/sparkly_clean.jpeg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![NPM Downloads](https://img.shields.io/npm/dw/sparkly_clean)
+[Play with docs](https://zen-out.github.io/modules/sparkly_clean.html)
+## Instructions: 
 
-Purpose 
+```js
+npm install sparkly_clean
+const sparkly_clean =  require('sparkly_clean')
+```
 
-- Requirements: 
-- Removes all folders that have not been touched for two weeks. 
-- Current stores all current sprint 
-- modules are always going to be deployed. everything you write should be tested, and written once. 
-- Recursively find all folders with this folder name and move into this folder 
-- e.g., find all folders with code_clarity and then copy into the current folder 
-
-/**********************************************
- * TO DO 
- * The purpose of this repository is to install it and then essentially feel okay about deleting it. 
- * ==================================
- * spark joy in your folder organization processes - 
- * - [ ] deletes folders that are longer than two weeks old
- * - [ ] moves all folders with a specific name
- * - [ ] prints out directory structure 
- * - [ ] encourages you to think about only things that make you a happy coder
- * - [ ] deletes folders that are git repositories
- * - [ ] moves readme into your portfolio
- ***********************************************/
-const sparkly_clean = require("sparkly_clean")
-const findRemoveSync = require('find-remove')
-const { see, hourglass } = require("code_clarity")
+## If utilizing in html...: 
+```html
+<script src="./node_modules/sparkly_clean/index.js"></script>
+<script> 
+$(()=> { 
+     const output =  sparkly_clean.method(parameter)
+ })
+</script>
+```
 
 
-// deletes 
+## Functions
 
-sparkly_clean.getShape("../../delete")
-// indicate wheth
-sparkly_clean.deleteFolders(true, 10)
+<dl>
+<dt><a href="#foldersToDelete">foldersToDelete(git, days)</a> ⇒ <code>any</code></dt>
+<dd><ol>
+<li>Checks whether or not git is needed </li>
+<li></li>
+</ol>
+</dd>
+<dt><a href="#filterForGitTrue">filterForGitTrue()</a> ⇒ <code>any</code></dt>
+<dd><p>Filters got git true</p>
+</dd>
+<dt><a href="#dateIsLonger">dateIsLonger(limit)</a> ⇒ <code>any</code></dt>
+<dd><ul>
+<li>If true, should delete. 
+let shouldWeDelete = dateIsLonger(&quot;March 2, 2022&quot;, 5)
+let shouldDelete = dateIsLonger(&quot;March 2, 2022&quot;, 1)
+console.log(&quot;🚀 ~ file: fs.js ~ line 82 ~ shouldDelete&quot;, shouldDelete)
+console.log(&quot;🚀 ~ file: fs.js ~ line 80 ~ shouldWeDelete&quot;, shouldWeDelete)</li>
+</ul>
+</dd>
+<dt><a href="#getDirectoryStructure">getDirectoryStructure(filepath, {extensions:extension}, (item, PATH, stats)</a> ⇒ <code>any</code></dt>
+<dd><p>getDirectoryStructure(&quot;./tree&quot;, /.txt$/)</p>
+</dd>
+<dt><a href="#printDirectory">printDirectory(filePath, extension)</a> ⇒ <code>any</code></dt>
+<dd></dd>
+<dt><a href="#isGitSync">isGitSync()</a> ⇒ <code>any</code></dt>
+<dd></dd>
+<dt><a href="#formatStats">formatStats(filePath)</a> ⇒ <code>object</code></dt>
+<dd></dd>
+<dt><a href="#getShape">getShape()</a> ⇒ <code>any</code></dt>
+<dd><ol>
+<li>Prints directory structure</li>
+</ol>
+</dd>
+</dl>
 
-sparkly_clean.moveAllFrom({ from: "", to: "", name: "" })
-sparkly_clean.moveReadMe("./README.md", "")
+<a name="foldersToDelete"></a>
 
-function deleteFolders(days, boolean) {
-    hourglass.start("2:56")
-    see.problem("want to remove all folders that i haven't touched")
-    see.should("i mean you can do that automatically, just like by literally deleting your folders")
-    see.is("yahh but i want this to be like... a way to just delete everything all the time so i can naturally stay focused")
-    see.story("users will be able to treat their computer like a new one and not be too worried about what they need to focus on. the computer should only store the current project.")
-    see.how("get a node_module that gets all folders that haven't been touched for this amount of time")
-    see.how("if the time is above the days entered, then delete it")
-    see.how("find out how to see if a folder is a git repository")
-    see.step("if it  a git repository, and only git is true, then you can delete it. otherwise, don't delete it. ")
-    see.problem("in terms of organizing your current node folder")
-    see.is("there are so many things to take care, just make everything a node module omg.")
-    see.should("organization will always be really important.")
+## foldersToDelete(git, days) ⇒ <code>any</code>
+1. Checks whether or not git is needed 
+2.
+
+**Kind**: global function  
+**Date**: 2022-03-04  
+**Author**: zen-out  
+
+| Param | Type |
+| --- | --- |
+| git | <code>any</code> | 
+| days | <code>any</code> | 
+
+<a name="filterForGitTrue"></a>
+
+## filterForGitTrue() ⇒ <code>any</code>
+Filters got git true
+
+**Kind**: global function  
+**Date**: 2022-03-04  
+**Author**: zen-out  
+<a name="dateIsLonger"></a>
+
+## dateIsLonger(limit) ⇒ <code>any</code>
+- If true, should delete. 
+let shouldWeDelete = dateIsLonger("March 2, 2022", 5)
+let shouldDelete = dateIsLonger("March 2, 2022", 1)
+console.log("🚀 ~ file: fs.js ~ line 82 ~ shouldDelete", shouldDelete)
+console.log("🚀 ~ file: fs.js ~ line 80 ~ shouldWeDelete", shouldWeDelete)
+
+**Kind**: global function  
+**Date**: 2022-03-04  
+**Author**: zen-out  
+
+| Param | Type |
+| --- | --- |
+| limit | <code>any</code> | 
+
+<a name="getDirectoryStructure"></a>
+
+## getDirectoryStructure(filepath, {extensions:extension}, (item, PATH, stats) ⇒ <code>any</code>
+getDirectoryStructure("./tree", /\.txt$/)
+
+**Kind**: global function  
+**Date**: 2022-03-04  
+**Author**: zen-out  
+
+| Param | Type |
+| --- | --- |
+| filepath | <code>any</code> | 
+| {extensions:extension} | <code>any</code> | 
+| (item | <code>any</code> | 
+| PATH | <code>any</code> | 
+| stats | <code>any</code> | 
+
+<a name="printDirectory"></a>
+
+## printDirectory(filePath, extension) ⇒ <code>any</code>
+**Kind**: global function  
+**Date**: 2022-03-04  
+**Author**: zen-out  
+
+| Param | Type |
+| --- | --- |
+| filePath | <code>any</code> | 
+| extension | <code>any</code> | 
+
+**Example**  
+```js
+1. Gets directory structure
+2. Prints out directory into structure/index.json file 
+```
+<a name="isGitSync"></a>
+
+## isGitSync() ⇒ <code>any</code>
+**Kind**: global function  
+**Date**: 2022-03-04  
+**Author**: zen-out  
+
+| Param | Type |
+| --- | --- |
+| path.join(dir | <code>any</code> | 
+| '.git' | <code>any</code> | 
+
+**Example**  
+```js
+isGitSync(dir)
+```
+<a name="formatStats"></a>
+
+## formatStats(filePath) ⇒ <code>object</code>
+**Kind**: global function  
+**Date**: 2022-03-04  
+**Author**: zen-out  
+
+| Param | Type |
+| --- | --- |
+| filePath | <code>any</code> | 
+
+**Example**  
+```js
+1. Get Stats, based on the path 
+2. Object 
+{
+  git: false,
+  atime: 2022-03-04T07:14:08.480Z,
+  birthtime: 2022-03-04T05:56:32.358Z,
+  size: 352
 }
+```
+<a name="getShape"></a>
+
+## getShape() ⇒ <code>any</code>
+1. Prints directory structure
+
+**Kind**: global function  
+**Date**: 2022-03-04  
+**Author**: zen-out  
+
+| Param | Type |
+| --- | --- |
+| "./delete" | <code>any</code> | 
+

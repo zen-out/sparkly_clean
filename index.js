@@ -1,3 +1,2 @@
-const { getDirectoryStructure, getPathForEach, printDirectory, isGitSync, formatStats, getShape } = require("./module/fs.js")
-const { dateIsLonger, filterForPastDate, getFolders, foldersToDelete, deleteFolders, filterForGitTrue, } = require("./module/deleteFolders.js")
-module.exports = { getDirectoryStructure, getPathForEach, printDirectory, isGitSync, formatStats, getShape, dateIsLonger, getFolders, foldersToDelete, deleteFolders, filterForGitTrue, filterForPastDate }
+const sparkly_clean = require("./dist/index.js")
+module.exports = sparkly_clean
