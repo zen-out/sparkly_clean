@@ -1,6 +1,6 @@
 {
     "name": "sparkly_clean",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "spark joy in your folder organization processes - deletes folders that are longer than two weeks old, moves all folders with a specific name, prints out directory structure and encourages you to think about only things that make you a happy coder, deletes folders that are git repositories, moves readme into your portfolio",
     "main": "index.js",
     "scripts": {
