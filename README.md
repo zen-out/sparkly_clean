@@ -30,8 +30,9 @@ const { see, hourglass } = require("code_clarity")
 
 // deletes 
 
-sparkly_clean.getShape("../sparkly_clean")
-sparkly_clean.deleteFolders(onlyGit, 14)
+sparkly_clean.getShape("../../delete")
+// indicate wheth
+sparkly_clean.deleteFolders(true, 10)
 
 sparkly_clean.moveAllFrom({ from: "", to: "", name: "" })
 sparkly_clean.moveReadMe("./README.md", "")
