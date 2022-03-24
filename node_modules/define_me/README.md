@@ -1,25 +1,26 @@
 # define_me
-[define_me - start here](https://zen-out.github.io/packages/define_me)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![NPM Downloads](https://img.shields.io/npm/dw/define_me)
+[Play with docs](https://zen-out.github.io/modules/define_me.html)
 ## Instructions: 
-```npm install define_me ``` 
- ``` const define_me =  require('define_me')```
+
+```js
+npm install define_me
+const define_me =  require('define_me')
+```
 
 ## If utilizing in html...: 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/define_me@1.1.0/dist/index.js"></script> 
-  <script>
-        $(() => {
+<script src="./node_modules/define_me/index.js"></script>
+<script> 
+$(()=> { 
+     const output =  define_me.method(parameter)
+ })
+</script>
+```
 
-            let getThis = define_me.containsThis(".git", define_me.git);
-            console.log("🚀 ~ file: playground.js ~ line 4 ~ getThis", getThis)
-            let checkDate = define_me.containsThis("March 20 2012", define_me.stringDate)
-            console.log("🚀 ~ file: playground.js ~ line 6 ~ checkDate", checkDate)
-        })
-    </script>
-    ``` 
+
 ## Functions
 
 <dl>
@@ -36,10 +37,10 @@
 **Date**: 2022-03-06  
 **Author**: zen-out  
 
-| Param  | Type             |
-|--------|------------------|
-| string | <code>any</code> |
-| regexp | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| string | <code>any</code> | 
+| regexp | <code>any</code> | 
 
 **Example**  
 ```js
@@ -53,10 +54,10 @@ console.log("🚀 ~ file: playground.js ~ line 4 ~ getThis", getThis)
 **Date**: 2022-03-07  
 **Author**: zen-out  
 
-| Param  | Type             |
-|--------|------------------|
-| string | <code>any</code> |
-| regexp | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| string | <code>any</code> | 
+| regexp | <code>any</code> | 
 
 **Example**  
 ```js
